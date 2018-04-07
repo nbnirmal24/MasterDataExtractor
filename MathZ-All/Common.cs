@@ -19,6 +19,7 @@ namespace MathZ_All
         public static void CreateWebsiteBaseFolder(string websiteName) {
             string path = Path.Combine(userFilePath, websiteName);
             Directory.CreateDirectory(path);
+
             Directory.CreateDirectory(Path.Combine(path, "output data"));
             Directory.CreateDirectory(Path.Combine(path, "unprocessed data"));
             Directory.CreateDirectory(Path.Combine(path, "ProductURL"));
