@@ -300,6 +300,7 @@ namespace MathZ_All
                 if (id == "")
                 {
                     id = GetSubString("data-sku=\"", "\">", str);
+                    id = GetSubString("data-sku=\"", "\">", str);
                 }
                 if (id == "")
                 {
