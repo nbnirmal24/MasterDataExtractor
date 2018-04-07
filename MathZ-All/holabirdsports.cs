@@ -304,6 +304,7 @@ namespace MathZ_All
                 if (id == "")
                 {
                     unprocessedUrl.Add("NO_ID" + rhon.Trim());
+                    unprocessedUrl.Add("NO_ID" + rhon.Trim());
                     Ulb.Text = unprocessedUrl.Count.ToString();
                     System.IO.File.WriteAllLines(unprocessedPath, unprocessedUrl);
                     goto psk;
