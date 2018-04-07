@@ -14,11 +14,14 @@ namespace MathZ_All
         static string userFilePath=Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "MathzAll");
         static DataTable productDetailsTable = new DataTable();
         public static void CreateBaseFolder() {
+
+
             Directory.CreateDirectory(userFilePath);
         }
         public static void CreateWebsiteBaseFolder(string websiteName) {
             string path = Path.Combine(userFilePath, websiteName);
             Directory.CreateDirectory(path);
+
             Directory.CreateDirectory(Path.Combine(path, "output data"));
             Directory.CreateDirectory(Path.Combine(path, "unprocessed data"));
             Directory.CreateDirectory(Path.Combine(path, "ProductURL"));
